@@ -1,6 +1,6 @@
 import axios from "axios";
 const instance = axios.create({
-  baseURL: "http://localhost:8000/api/donation",
+  baseURL: "https://donations-8z51.onrender.com/api/donation",
   withCredentials: true,
 });
 
