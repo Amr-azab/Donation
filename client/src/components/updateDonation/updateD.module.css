@@ -1,0 +1,92 @@
+.donationContainer {
+  width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.inputs {
+  margin-bottom: 20px;
+}
+
+.email,
+.password {
+  width: 350px;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.errorMsg {
+  color: red;
+  margin-bottom: 10px;
+}
+
+.buttons {
+  text-align: center;
+}
+
+.signup {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.loading {
+  width: 100%;
+  height: 50px;
+  margin-top: 20px;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  animation: loading 1s infinite;
+}
+
+@keyframes loading {
+  0% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .donationContainer {
+    width: 170px;
+    padding: 10px;
+  }
+  .title {
+    font-size: 12px;
+  }
+
+  .email,
+  .password {
+    width: 150px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  .signup {
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+}

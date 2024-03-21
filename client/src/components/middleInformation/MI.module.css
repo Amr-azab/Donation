@@ -1,0 +1,66 @@
+.middle {
+  background-color: #f0f0f0;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.DI {
+  font-size: 20px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.row span {
+  font-weight: bold;
+}
+
+.row:last-child {
+  margin-bottom: 0;
+}
+
+.buttonContainer {
+  display: flex;
+  align-items: center;
+}
+
+.editButton {
+  margin-left: auto;
+  background-color: #ff6347;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.editButton:hover {
+  background-color: #0056b3;
+}
+
+@media screen and (max-width: 600px) {
+  .buttonContainer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .DI {
+    font-size: 8px;
+  }
+
+  .editButton {
+    padding: 4px 8px;
+    font-size: 8px;
+    margin-top: 10px;
+    margin-left: 0;
+  }
+  .left {
+    font-size: 6px;
+  }
+  .right {
+    font-size: 6px;
+  }
+}

@@ -1,0 +1,43 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+.item {
+  margin-right: 20px;
+  border-right: 1px solid #ccc;
+  padding-right: 10px;
+}
+
+.Up {
+  font-weight: bold;
+  font-size: 20px;
+  padding-bottom: 1rem;
+  color: rgb(135, 49, 49);
+}
+.Down {
+  font-size: 15px;
+}
+
+@media screen and (max-width: 600px) {
+  .header {
+    justify-content: flex-start;
+    padding: 5px 10px;
+  }
+
+  .item {
+    margin-right: 5px;
+    border-right: none;
+    padding-right: 0;
+    margin-bottom: 5px;
+  }
+  .Up {
+    font-size: 6px;
+  }
+  .Down {
+    font-size: 6px;
+  }
+}

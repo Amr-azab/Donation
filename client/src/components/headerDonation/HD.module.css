@@ -1,0 +1,60 @@
+.header {
+  background-color: #f0f0f0;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.title {
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.donation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.amount {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.status {
+  font-size: 15px;
+  color: green;
+}
+
+.refundButton {
+  background-color: #ff6347;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.refundButton:hover {
+  background-color: #0056b3;
+}
+
+@media screen and (max-width: 600px) {
+  .header {
+    border-radius: 0;
+  }
+  .title {
+    font-size: 12px;
+  }
+  .amount {
+    font-size: 8px;
+  }
+  .status {
+    font-size: 8px;
+  }
+  .refundButton {
+    padding: 2px 4px;
+    border-radius: 3px;
+    font-size: 8px;
+  }
+}
