@@ -20,5 +20,9 @@ app.use((0, morgan_1.default)("dev"));
 app.use(express_1.default.json());
 app.use((0, cookie_parser_1.default)());
 app.use("/api/donation/user", userRoutes_1.router);
+app.use(express_1.default.static(`${__dirname}/build`));
+app.all("*", (req, res, next) => {
+    res.sendFile(`${__dirname}/build/index.html`);
+});
 app.use(errorController_1.default);
 exports.default = app;
