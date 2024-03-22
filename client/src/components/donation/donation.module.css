@@ -63,15 +63,22 @@
 @media screen and (max-width: 600px) {
   .container {
     width: 50%;
-    border-radius: 0;
+
+    border-radius: 5px;
+  }
+  .inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
   }
   .email,
   .password,
   .roleSelect {
-    width: 170px;
-    padding: 5px;
+    width: 100%; /* Inputs take full width of their container */
+    padding: 10px; /* Adjusted padding for better spacing */
     border: 1px solid #ccc;
     border-radius: 5px;
+    box-sizing: border-box; /* Ensure padding and border are included in width */
   }
   .word {
     font-size: 1rem;

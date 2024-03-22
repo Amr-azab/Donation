@@ -50,6 +50,7 @@ export const HeaderInformation: FC = () => {
   if (!headerInformation) {
     return <div>No donation data available</div>;
   }
+
   const Time = (thetime: string): string => {
     const date = new Date(thetime);
     const month = String(date.getMonth() + 1).padStart(2, "0");
@@ -64,30 +65,41 @@ export const HeaderInformation: FC = () => {
   };
 
   return (
-    <div className={styles.header}>
-      <div className={styles.item}>
-        <div className={styles.Up}>Last update</div>
-        <div className={styles.Down}>
-          {Time(headerInformation.donationDate)}
+    <div className={styles.container}>
+      <div className={styles.row}>
+        <div className={styles.column}>
+          <div className={styles.item}>
+            <div className={styles.Up}>Last update</div>
+            <div className={styles.Down}>
+              {Time(headerInformation.donationDate)}
+            </div>
+          </div>
         </div>
-      </div>
-      <div className={styles.item}>
-        <div className={styles.Up}>Supporter Name</div>
-        <div className={styles.Down}>{headerInformation.supporterName}</div>
-      </div>
-      <div className={styles.item}>
-        <div className={styles.Up}>Campaign</div>
-        <div className={styles.Down}> {headerInformation.campaign}</div>
-      </div>
-      <div className={styles.item}>
-        <div className={styles.Up}>Payment Method</div>
-        <div className={styles.Down}>{headerInformation.paymentMethod}</div>
-      </div>
-      <div className={styles.item}>
-        <div className={styles.Up}>Payment Method Number</div>
-        <div className={styles.Down}>
-          {" "}
-          {headerInformation.paymentMethodNumber}
+        <div className={styles.column}>
+          <div className={styles.item}>
+            <div className={styles.Up}>Supporter Name</div>
+            <div className={styles.Down}>{headerInformation.supporterName}</div>
+          </div>
+        </div>
+        <div className={styles.column}>
+          <div className={styles.item}>
+            <div className={styles.Up}>Campaign</div>
+            <div className={styles.Down}> {headerInformation.campaign}</div>
+          </div>
+        </div>
+        <div className={styles.column}>
+          <div className={styles.item}>
+            <div className={styles.Up}>Payment Method</div>
+            <div className={styles.Down}>{headerInformation.paymentMethod}</div>
+          </div>
+        </div>
+        <div className={styles.column}>
+          <div className={styles.item}>
+            <div className={styles.Up}>Payment Method Number</div>
+            <div className={styles.Down}>
+              {headerInformation.paymentMethodNumber}
+            </div>
+          </div>
         </div>
       </div>
     </div>

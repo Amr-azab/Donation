@@ -20,8 +20,8 @@
   border: none;
   font-size: 1.3rem;
   border-radius: 0.5rem;
-  background-color: rgb(48, 118, 161);
-  box-shadow: 1px 1px 10px 1px rgb(48, 118, 161);
+  background-color: rgb(201, 202, 224);
+  box-shadow: 1px 1px 10px 1px rgb(8, 11, 12);
   color: rgb(27, 25, 25);
   &::placeholder {
     color: rgb(0, 0, 0);
