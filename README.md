@@ -14,7 +14,7 @@ View and track the list of my donations after create donation
 ![Alt text](client/img/paymenttt.PNG)
 
 view the donation information after create donation
-![Alt text](client/img/informationdonation.PNG)
+![Alt text](client/img/infromationpersonD.PNG)
 
 can update the donation
-![Alt text](client/img/updatedonation.PNG)
+![Alt text](client/img/updateDonate.PNG)
